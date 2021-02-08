@@ -1,0 +1,31 @@
+#candidates-table {
+  font-size: 1.4rem;
+  width: 80%;
+  margin: 6rem auto;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 18px 10px 15px 2px rgba(52, 58, 64, 0.2);
+  .valid {
+    background-color: "transparent";
+  }
+  .invalid {
+    background-color: rgba(248, 215, 218, 0.6);
+  }
+  .table-cell {
+      vertical-align: middle;
+      &.table-cell-header {
+        font-weight: 700;
+      }
+      &.table-cell-data {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+  }
+  tbody {
+      tr:hover {
+          .invalid {
+            background-color: rgba(248, 215, 218, 0.8)
+          }
+      }
+  }
+}
